@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Bingo Heeler </title>
+        <meta charset="utf-8">
+        <style> 
+        * {
+            background-color: rgb(99, 122, 237);
+            color: rgb(18, 18, 86);
+        }
+        form {
+           margin: auto;
+           width: 8%;
+           
+           padding: 10px;
+        }
+        div {
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        input[type=text]:focus {
+            background-color: rgb(161, 210, 253);
+        }
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: rgb(171, 124, 36);
+            border: none;
+            color: rgb(18, 18, 86);
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            float: right;
+        }
+        </style>
+    </head>
+
+<body>
+<h2 style="text-align: center; margin-top: 200px;" >Sign up for Bingoes Newsletter</h2>
+
+<form action="/action_page">
+
+<div class="firstName">
+<label for="firstName">First Name: </label><br>
+<input type="text" id="firstName"
+name="firstName" value="Bingo">
+</div>
+
+<div class="lastName">
+<label for="lastName">Last Name: </label><br>
+<input type="text" id="lastName"
+name="lastName" value="Heeler">
+</div>
+
+<div class="birthDate">
+<label for="birthDate">Birth Date: </label><br>
+<input type="date" id="birthDate"
+name="birthDate" value="04/12/2018">
+</div>
+
+<div class="email">
+<label for="email">Email: </label><br>
+<input type="email" id="email"
+name="email" value="your_email@....com">
+</div>
+
+<input type="submit" value="Submit" style="position: right">
+</form>
+
+</body>
+</html>

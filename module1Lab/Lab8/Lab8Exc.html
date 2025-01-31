@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Lab 8 - Dice Game</title>
+    <meta charset="utf-8">
+
+    <style>
+        * {
+            background-color: rgb(185, 224, 211);
+            color: rgb(57, 57, 154);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 5% 4%;
+        }
+
+        
+        .div {
+                display: flex;
+                min-height: 100vh;
+                align-items: center;
+
+            }
+        
+        button {
+            border: none;
+            
+        }
+       
+        button:hover {
+           cursor: grab;
+        }
+
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heading1" style="text-align: center; font-size: 50px;" >
+        <h1> Ready to roll? </h1>
+        <h4> choose your dice to see your fate </h4>
+    </div>
+    
+   
+    <div class="dice-button" id="dice-button">
+        <button onclick="rollDice()" class="btn" id="btn6"><img src=".\d6_dice.png" alt="6 sided dice"></button>      
+        <button onclick="rollDice()" class="btn" id="btn8"><img src=".\d8_dice.png" alt="8 sided dice"></button>
+        <button onclick="rollDice()" class="btn" id="btn10"><img src=".\d10_dice.png" alt="10 sided dice"></button>
+        <button onclick="rollDice()" class="btn" id="btn12"><img src=".\d12_dice.png" alt="12 sided dice"></button>
+        <button onclick="rollDice()" class="btn" id="btn20"><img src=".\d20_dice.png" alt="20 sided dice"></button>
+    </div>
+    <!-- make array to display results     -->
+    <div class="results" id="results_array"></div>
+
+
+    <script>
+   // constant holding min maxes for each dice
+        // // const diceMinMax { 
+        // SIX = [1,  6],
+        // EIGHT = [1,  8],
+        // TEN = [1, 10],
+        // TWELVE =[1, 12],
+        // TWENTY = [1, 20],
+        // // }
+        // const HIGHROLL = Math.ceil(1);
+        // const LOWROLL = Math.floor(20);
+
+    
+        // function using math randomiser and selected number to display a number
+        //make button call function
+
+        //    function rollDice(SIX) {
+        //    const RESULTS = Math.floor(Math.random() * (LOWROLL - HIGHROLL + 1) + HIGHROLL);
+        //    return this;
+        // }
+
+        
+        const SIX = Math.floor(Math.random() * 6)
+        const EIGHT = Math.floor(Math.random() * 8)
+        const TEN = Math.floor(Math.random() * 10)
+        const TWELVE = Math.floor(Math.random() * 12)
+        const TWENTY = Math.floor(Math.random() * 20)
+        
+
+        function rollDice(min, max) {
+            return Math.floor(Math.random() * (min - max + 1)) + min;
+        }
+
+        rollDice();
+
+
+     
+        // function to display a message based on the number rolled
+
+        function displayResults(rollDice) {
+           document.getElementById("results_array").innerHTML 
+        }
+       
+        console.log(SIX);
+        console.log(EIGHT);
+        console.log(TEN);
+        console.log(TWELVE);
+        console.log(TWENTY);
+
+        console.log(rollDice);
+
+        // rhyme base on the number stored in constants to be called
+
+        // use return this inside an object to display name
+       
+
+        
+
+
+
+
+
+    </script>
+
+
+
+    
+
+</body>
+
+</html>
