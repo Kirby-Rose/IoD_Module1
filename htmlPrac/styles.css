@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    
+    }
+
+    body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(68, 136, 232);
+    }
+
+    header {
+    color: rgb(228, 129, 29);
+    text-align: center;
+    padding: 20px;
+    }
+    header h1 {
+        font-family: "Lucida Handwriting";
+        font-size: 80px;
+    }
+    header p {
+       font-size: 25px;
+    }
+
+    nav {
+    overflow: hidden;
+    background-color: rgb(231, 198, 135);
+    }
+    ul{
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        color: rgb(25, 25, 116);
+        text-align: left;
+        padding: 5px 5px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-color: aliceblue;
+    }
+
+    div {
+        padding: 10px;
+        color: rgb(25, 25, 116);
+    }
+
+    article {
+    float: left;
+    background-color: whitesmoke;
+    width: 75%;
+    padding: 20px;
+    }
+
+    aside {
+    float: right;
+    width: 23%;
+    padding-left: 20px;
+    text-align: left;
+    background-color: blanchedalmond;
+    
+    }
+
+
+    footer {
+    background: #f6aa06;
+    color: #3b260a;
+    text-align: center;
+    font-size: 0.9em;
+    clear: both;
+    padding: 20px;
+    
+    }

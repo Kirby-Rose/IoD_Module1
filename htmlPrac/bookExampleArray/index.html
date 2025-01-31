@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+  </head>
+  <body>
+    <div class="user-input">
+        <input type="text" id="bookInput" placeholder="Enter book title here" />
+        <button id="search-button" onclick="searchBook()">Search</button>
+    </div>
+
+    <div class="books-container"></div>
+    <script>
+      const books = [
+        "sapiens",
+        "where is the green sheep",
+        "harry potter and the goblet of fire",
+        "song of ice and fire",
+      ]
+      books.push("the snail and the whale");
+
+      function searchBook() {
+        const bookInput = document.getElementById("bookInput").value;
+      let isBookFound = false; 
+      if (isBookFound === true) {
+        isBookFound = books.includes(bookInput)
+
+        console.log("book found")
+      } else {
+        console.log("book not found")
+      }
+
+
+      console.log("searchBook function called")
+      }
+
+      
+
+    // USER WANTS TO FIND A BOOK
+        
+    // USER NEEDS TO INPUT THEIR BOOK CHOICE *REQUIRED
+
+
+    // USER CLICKS A BUTTON TO SEARCH FOR THE BOOK *REQUIRED
+
+
+    // IF THE BOOK IS NOT FOUND, DISPLAY A MESSAGE SAYING "BOOK NOT FOUND" *REQUIRED
+
+            
+    // IF THE BOOK IS FOUND, DISPLAY A MESSAGE SAYING "BOOK FOUND" WITH FULL BOOK NAME *** OPTIONAL
+    
+    
+    </script>
+  </body>
+</html>
